@@ -1,8 +1,8 @@
 # Customize to fit your system
 
 # paths
-PREFIX      = /bin
-MANPREFIX   = /share/man
+PREFIX      = /usr/
+MANPREFIX   = $(PREFIX)/share/man
 
 VERSION     = 7
 #OBJTYPE     = 386
