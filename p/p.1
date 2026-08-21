@@ -1,0 +1,36 @@
+.TH P 1
+.SH NAME
+p \- paginate
+.SH SYNOPSIS
+.B p
+[
+.BI \- n
+]
+[
+.I file ...
+]
+.SH DESCRIPTION
+.PP
+.I P
+copies its input to the standard output, stopping at the end of every
+page to wait for a newline from the terminal.
+The input is taken from the named
+.I files
+or from the standard input if none are named.
+While waiting for a newline,
+.I p
+accepts the commands:
+.TP
+.B <newline>
+Continue.
+.TP
+.B q
+Quit.
+.TP
+.BI ! command
+Run
+.I command
+using
+.BR rc (1).
+.SH SOURCE
+.B $PLAN9/src/cmd/p.c

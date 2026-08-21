@@ -34,6 +34,7 @@ SUBDIRS  = lib9\
 	mk\
 	mkdir\
 	mtime\
+	p\
 	pbd\
 	primes\
 	rc\
